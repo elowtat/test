@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+/* Базовые CSS-сбросы */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter, sans-serif;
+}
+
+body {
+    line-height: 1.5;
+    color: #333;
+    background-color: #C8DBB6;
+    overflow-x: hidden;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    transition: 1s ease-in-out;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Стили заготовки от Валерчика */
+main {
+    width: 1280px;
+    margin: auto;
+}
+
+.catalog {
+    padding-top: 64px;
+    margin-bottom: 32px;
+}
+
+nav {
+    margin-bottom: 48px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 16px;
+}
+
+.filter {
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.filter-icon {
+    background-color: #3B8343;
+    padding: 10px;
+    font-size: 24px;
+    border-radius: 16px 0 0 16px;
+}
+
+.filter-icon span {
+    display: block;
+}
+
+.filter-text {
+    flex: 1 0 auto;
+    font-weight: bold;
+    color: white;
+    background-color: #8FCF65;
+    padding: 16px 10px;
+    border-radius: 0 16px 16px 0;
+}
+
+.filter-text1 {
+    position: absolute;
+    z-index: -1;
+    flex: 1 0 auto;
+    font-weight: bold;
+    color: white;
+    background-color: #8FCF65;
+    padding: 4px 10px;
+    width: 200px;
+    border-radius: 16px;
+    transition: 1s ease-in-out;
+}
+
+.filter:hover .filter-text1{
+    transform: translate(100px, -60px) rotate(360deg);
+    transition: 0.5s;
+}
+.list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+}
+
+.card {
+    width: 300px;
+    background-color: #F3FFEE;
+    border-radius: 24px;
+    border: 2px solid #333;
+    transition: 1s ease-in-out;
+}
+
+.order form {
+    width: 600px;
+    margin: 0 auto;
+    border-radius: 24px;
+    bottom: 2px solid #333;
+    background-color: #F3FFEE;
+    padding: 60px 50px;
+}
+
+.field {
+    margin-bottom: 20px;
+}
+
+.input {
+    width: 500px;
+    border-radius: 8px;
+    padding: 12px;
+    border: none;
+    background-color: #8FCF65;
+    color: white;
+    font-size: 18px;
+}
+
+
+.input::placeholder {
+    color: white;
+}
+
+.submit-btn {
+    display: block;
+    width: 240px;
+    margin: 0 auto;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    background-color: #3B8343;
+    color: white;
+    transition: 0.2s;
+}
+
+.submit-btn:hover {
+    background-color: #8FCF65;
+}
+
+/* Напиши код ниже */
+
+
+.popular{
+    display: block;
+    transition: 1s ease-in-out;
+}
+
+.high{
+    display: block;
+    transition: 1s ease-in-out;
+}
+
+.early{
+    display: block;
+    transition: 1s ease-in-out;
+}
+
+.light{
+    display: block;
+    transition: 1s ease-in-out;
+}
+
+.rare{
+    display: block;
+    transition: 1s ease-in-out;
+}
+
+.filter:hover .popular{
+    transition: 0.5s;
+    transform: scale(2) rotate(360deg);
+
+}
+
+.filter:hover .high{
+    transition: 0.5s;
+    transform: scale(2) rotate(360deg);
+}
+
+.filter:hover .early{
+    transition: 0.5s;
+    transform: scale(2) rotate(360deg);
+}
+
+.filter:hover .light{
+    transition: 0.5s;
+    transform: scale(2) rotate(360deg);
+}
+
+.filter:hover .rare{
+    transition: 0.5s;
+    transform: scale(2) rotate(360deg);
+}
+
+.card:hover{
+    transition: 1s;
+    transform: scale(1.1);
+}
+
+.field1{
+    margin-bottom: 20px;
+    display: flex;
+
+}
+
+p{
+    margin: 5px;
+}
+
+.input:focus{
+    transition: 0.6s;
+    background-color: #3B8343;
+}
+
+.bebrik1{
+    position: absolute;
+    z-index: -1;
+    filter: blur(5px);
+    width: 300px;
+    transform: scale(1.3) rotate(-37deg);
+    top: 20px;
+    left: 20px;
+}
+
+.bebrik2{
+    position: absolute;
+    z-index: -1;
+    width: 300px;
+    transform: scale(1.3) rotate(37deg);
+    top: 20px;
+    right: 20px;
+}
+
+.bebrik3{
+    position: absolute;
+    z-index: -1;
+    width: 300px;
+    transform: scale(1.5) rotate(-37deg);
+    top: 420px;
+    left: 40px;
+}
+
+.bebrik4{
+    position: absolute;
+    z-index: -1;
+    filter: blur(5px);
+    width: 300px;
+    transform: scale(1.5) rotate(37deg);
+    top: 420px;
+    right: 20px;
+}
+
+.bebrik5{
+    position: absolute;
+    z-index: -1;
+    width: 300px;
+    filter: blur(5px);
+    transform: scale(1.3) rotate(-37deg);
+    top: 720px;
+    left: 20px;
+}
+
+.bebrik6{
+    position: absolute;
+    z-index: -1;
+    width: 300px;
+    transform: scale(1.3) rotate(37deg);
+    top: 720px;
+    right: 20px;
+}
+
+a:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}

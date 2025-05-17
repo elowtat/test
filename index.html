@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Цветочная лавка мадам Дюваль</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <section class="catalog">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#" class="filter">
+                            <div class="filter-icon">
+                                <span class="popular">💓</span>
+                            </div>
+                            <div class="filter-text">Популярные</div>
+                            <div class = "filter-text1">Лилии, орхидеи, розы, пионы и др...</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="filter">
+                            <div class="filter-icon">
+                                <span class="high">🌻</span>
+                            </div>
+                            <div class="filter-text">Высокие</div>
+                            <div class = "filter-text1">Чёрноглазая сьюзен, гибискус и др...</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="filter">
+                            <div class="filter-icon">
+                                <span class="early">🌱</span>
+                            </div>
+                            <div class="filter-text">Ранний посев</div>
+                            <div class = "filter-text1">Бархатцы, василёк, гипсофила и др...</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="filter">
+                            <div class="filter-icon">
+                                <span class="light">🌞</span>
+                            </div>
+                            <div class="filter-text">Светолюбивые</div>
+                            <div class = "filter-text1">Рапис, аспидистра, ливистона и др...</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="filter">
+                            <div class="filter-icon">
+                                <span class="rare">🚿</span>
+                            </div>
+                            <div class="filter-text">Редкий полив</div>
+                            <div class = "filter-text1">Алоэ, шеффлера, декабрист и др...</div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="list">
+                <article class="card">
+                    <img src="roses.png" alt="Розы">
+                </article>
+                <article class="card">
+                    <img src="violet.png" alt="Фиалки">
+                </article>
+                <article class="card">
+                    <img src="monstera.png" alt="Монстера">
+                </article>
+            </div>
+        </section>
+        <section class="order">
+            <form id="order-form" action="">
+                <div class="field">
+                    <input class="input" name="fullname" id="fullname" type="text" placeholder="Фамилия и имя" required>
+                </div>
+                <div class="field">
+                    <input class="input" name="number" id="number" type="text" placeholder="Телефон" required>
+                </div>
+                <div class="field">
+                    <input class="input" name="email" id="number" type="text" placeholder="Адрес эелектронной почты" required>
+                </div>
+                <div class="field1">
+                    <input  name="bob" id="check" type="checkbox">
+                    <p>Не звонить</p>
+                </div>
+                <input type="submit" value="Заказать" class="submit-btn">
+            </form>
+        </section>
+    </main>
+    <section>
+        <img class = "bebrik1 bg" src = "bg.png">
+        <img class = "bebrik2 bg" src = "bg.png">
+        <img class = "bebrik3 bg" src = "bg.png">
+        <img class = "bebrik4 bg" src = "bg.png">
+        <img class = "bebrik5 bg" src = "bg.png">
+        <img class = "bebrik6 bg" src = "bg.png">
+
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
